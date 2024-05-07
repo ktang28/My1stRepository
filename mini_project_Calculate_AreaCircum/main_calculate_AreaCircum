@@ -1,0 +1,6 @@
+radius = int(input ("Please type the value of radiusr: "))
+pai = 3.1415926
+area = pai * radius
+circumference = 2* pai* radius
+print("The area of a circle of radius that you typed is:", area)
+print("The circumference of a circle of radius that you typed is:", circumference)
