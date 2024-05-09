@@ -49,7 +49,7 @@ def merge_sort(arr):
 print("Original given list is:")
 print(random_list)
 
-# Sort the list using bubble sort
+# Sort the list using merge sort
 merge_sort(random_list)
 
 
