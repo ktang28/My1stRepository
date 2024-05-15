@@ -3,11 +3,13 @@ import os
 with open("myDiary.txt") as my_file:
     entries = my_file.read()
 while True:
-    operation = input("1 - add an entry, 2 - read entries, 0 - quit\nFunction:")
+
+    print("1 - add an entry, 2 - read entries, 0 - quit:")
+    operation = input("Please enter your selection:")
     if operation == "1":
         content = input("Please type diary entry: ")
         with open("myDiary.txt","a") as diary:
-            diary.write(f"{content}")
+            diary.write(f"{content}"+"\n")
         print("Diary saved\n")
     elif operation == "2":
         print("Entries: ")
