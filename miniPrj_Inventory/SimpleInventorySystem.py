@@ -14,8 +14,7 @@ class Products:
 
     def update_product_quantity(self, quantity_change):
         self.quantity = self.quantity + quantity_change
-        if self.quantity < 0:
-            self.quantity = 0
+
         print(f"Updated Quantity for {self.name}: {self.quantity}")
 
 
