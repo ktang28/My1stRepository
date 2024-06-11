@@ -55,12 +55,11 @@ class BankAccount:
             print(transaction)
         return self.transaction_history
 
-
 def main():
-    account = BankAccount()
+
     while True:
         print("\n Welcome! Please entry your selection:")
-        print("1: Create a new account, 2: Display account information, 3: Update account balance  4: Deposit money   5; Withdraw money   6: Transaction history  0:Exit")
+        print("1: Create a new account    2: Deposit money   3: Withdraw money  4: Display account name, number & type  5: Update account balance 6: Transaction history  0:Exit")
 
         choice = input("Choose an option (1/2/3/4/5/6/0): ")
 
@@ -72,16 +71,15 @@ def main():
             account = BankAccount(name,account_num,balance =0,)
 
         elif choice == '2':
-            account.display_account_info()
-
-        elif choice == '3':
-            account.check_balance()
-
-        elif choice == '4':
             account.deposit_money()
 
-        elif choice == '5':
+        elif choice == '3':
             account.withdraw_money()
+        elif choice == '4':
+            account.display_account_info()
+
+        elif choice == '5':
+            account.check_balance()
 
         elif choice == '6':
             account.get_transaction_history()
@@ -91,7 +89,6 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
-
 
 if __name__ == "__main__":
     main()
